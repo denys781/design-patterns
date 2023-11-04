@@ -23,6 +23,9 @@
     <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Prototype\Archer.cpp" />
+    <ClCompile Include="Prototype\WarriorsPrototypeRegistry.cpp" />
+    <ClCompile Include="Prototype\Swordsman.cpp" />
     <ClCompile Include="Singleton\Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -30,6 +33,10 @@
     <ClInclude Include="FactoryMethod\IDatabaseEngine.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLDatabaseEngine.h" />
+    <ClInclude Include="Prototype\Archer.h" />
+    <ClInclude Include="Prototype\IWarrior.h" />
+    <ClInclude Include="Prototype\WarriorsPrototypeRegistry.h" />
+    <ClInclude Include="Prototype\Swordsman.h" />
     <ClInclude Include="Singleton\Logger.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -21,6 +21,12 @@
     <Filter Include="Source Files\FactoryMethod">
       <UniqueIdentifier>{49dd2829-98c8-44e7-95b1-ffb513eaee42}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Prototype">
+      <UniqueIdentifier>{b878b5c0-dce8-4ec3-a76a-e5f106f0d7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Prototype">
+      <UniqueIdentifier>{848665a1-2a98-4312-bc35-e45772e2c881}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +44,15 @@
     <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp">
       <Filter>Source Files\FactoryMethod</Filter>
     </ClCompile>
+    <ClCompile Include="Prototype\Archer.cpp">
+      <Filter>Source Files\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype\Swordsman.cpp">
+      <Filter>Source Files\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype\WarriorsPrototypeRegistry.cpp">
+      <Filter>Source Files\Prototype</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Logger.h">
@@ -54,6 +69,18 @@
     </ClInclude>
     <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h">
       <Filter>Header Files\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype\IWarrior.h">
+      <Filter>Header Files\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype\Archer.h">
+      <Filter>Header Files\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype\Swordsman.h">
+      <Filter>Header Files\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype\WarriorsPrototypeRegistry.h">
+      <Filter>Header Files\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
