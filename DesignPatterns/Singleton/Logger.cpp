@@ -4,7 +4,7 @@
 
 namespace
 {
-    using Logging::LogLevel;
+    using Singleton::LogLevel;
 
     std::string GetLogLevelStringRepresentation(LogLevel level)
     {
@@ -20,7 +20,7 @@ namespace
     }
 }
 
-namespace Logging
+namespace Singleton
 {
     Logger::Logger()
         : stream_(nullptr)

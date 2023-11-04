@@ -19,10 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp" />
+    <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp" />
+    <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Singleton\Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FactoryMethod\ApplicationsRepository.h" />
+    <ClInclude Include="FactoryMethod\IDatabaseEngine.h" />
+    <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h" />
+    <ClInclude Include="FactoryMethod\PostgreSQLDatabaseEngine.h" />
     <ClInclude Include="Singleton\Logger.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -90,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)/Singleton;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

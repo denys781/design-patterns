@@ -15,6 +15,12 @@
     <Filter Include="Source Files\Singleton">
       <UniqueIdentifier>{7e7456dc-79d9-452d-a2ae-0b996067d844}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\FactoryMethod">
+      <UniqueIdentifier>{b9a55771-3592-48bf-a983-5234e293a1b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FactoryMethod">
+      <UniqueIdentifier>{49dd2829-98c8-44e7-95b1-ffb513eaee42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -23,10 +29,31 @@
     <ClCompile Include="Singleton\Logger.cpp">
       <Filter>Source Files\Singleton</Filter>
     </ClCompile>
+    <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp">
+      <Filter>Source Files\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp">
+      <Filter>Source Files\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp">
+      <Filter>Source Files\FactoryMethod</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Logger.h">
       <Filter>Header Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\IDatabaseEngine.h">
+      <Filter>Header Files\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\PostgreSQLDatabaseEngine.h">
+      <Filter>Header Files\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\ApplicationsRepository.h">
+      <Filter>Header Files\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h">
+      <Filter>Header Files\FactoryMethod</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

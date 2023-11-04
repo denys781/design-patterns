@@ -3,7 +3,7 @@
 #include <mutex>
 #include <ostream>
 
-namespace Logging
+namespace Singleton
 {
     enum class LogLevel : std::uint8_t
     {
