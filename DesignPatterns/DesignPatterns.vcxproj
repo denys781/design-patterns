@@ -19,6 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractFactory\HeavilyArmedArcher.cpp" />
+    <ClCompile Include="AbstractFactory\HeavilyArmedSwordsman.cpp" />
+    <ClCompile Include="AbstractFactory\HeavilyArmedWarriorFactory.cpp" />
+    <ClCompile Include="AbstractFactory\LightlyArmedArcher.cpp" />
+    <ClCompile Include="AbstractFactory\LightlyArmedSwordsman.cpp" />
+    <ClCompile Include="AbstractFactory\LightlyArmedWarriorFactory.cpp" />
     <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
@@ -29,6 +35,13 @@
     <ClCompile Include="Singleton\Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFactory\HeavilyArmedArcher.h" />
+    <ClInclude Include="AbstractFactory\HeavilyArmedSwordsman.h" />
+    <ClInclude Include="AbstractFactory\HeavilyArmedWarriorFactory.h" />
+    <ClInclude Include="AbstractFactory\IWarriorFactory.h" />
+    <ClInclude Include="AbstractFactory\LightlyArmedArcher.h" />
+    <ClInclude Include="AbstractFactory\LightlyArmedSwordsman.h" />
+    <ClInclude Include="AbstractFactory\LightlyArmedWarriorFactory.h" />
     <ClInclude Include="FactoryMethod\ApplicationsRepository.h" />
     <ClInclude Include="FactoryMethod\IDatabaseEngine.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h" />

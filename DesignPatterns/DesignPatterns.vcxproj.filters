@@ -27,6 +27,12 @@
     <Filter Include="Source Files\Prototype">
       <UniqueIdentifier>{848665a1-2a98-4312-bc35-e45772e2c881}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\AbstractFactory">
+      <UniqueIdentifier>{a20f640d-8a66-4406-a272-cdd09d4d3552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AbstractFactory">
+      <UniqueIdentifier>{bd11ba44-8f65-4ac0-8f2c-075aba47ce6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -52,6 +58,24 @@
     </ClCompile>
     <ClCompile Include="Prototype\WarriorsPrototypeRegistry.cpp">
       <Filter>Source Files\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\LightlyArmedArcher.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\LightlyArmedSwordsman.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\HeavilyArmedArcher.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\HeavilyArmedSwordsman.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\LightlyArmedWarriorFactory.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\HeavilyArmedWarriorFactory.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +108,27 @@
     </ClInclude>
     <ClInclude Include="Prototype\IWarriorPrototype.h">
       <Filter>Header Files\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\LightlyArmedArcher.h">
+      <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\LightlyArmedSwordsman.h">
+      <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\HeavilyArmedArcher.h">
+      <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\HeavilyArmedSwordsman.h">
+      <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\IWarriorFactory.h">
+      <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\LightlyArmedWarriorFactory.h">
+      <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\HeavilyArmedWarriorFactory.h">
+      <Filter>Header Files\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
