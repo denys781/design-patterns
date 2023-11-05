@@ -4,11 +4,11 @@ namespace FactoryMethod
 {
     bool PostgreSQLDatabaseEngine::Connect()
     {
-        return true;
+        return true; // TODO: implement real connecting to db
     }
 
     Table PostgreSQLDatabaseEngine::ExecuteQuery(const std::string& query)
     {
-        return Table();
+        return Table(); // TODO: implement real query executing
     }
 }

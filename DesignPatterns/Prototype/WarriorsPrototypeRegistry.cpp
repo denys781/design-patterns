@@ -8,12 +8,12 @@ namespace Prototype
         prototypes_[PrototypeType::Swordsman] = std::make_unique<Swordsman>();
     }
 
-    std::unique_ptr<IWarrior> WarriorsPrototypeRegistry::GetArcherPrototype()
+    std::unique_ptr<IWarrior> WarriorsPrototypeRegistry::GetArcherWarrior()
     {
         return prototypes_[PrototypeType::Archer]->Clone();
     }
 
-    std::unique_ptr<IWarrior> WarriorsPrototypeRegistry::GetSwordsmanPrototype()
+    std::unique_ptr<IWarrior> WarriorsPrototypeRegistry::GetSwordsmanWarrior()
     {
         return prototypes_[PrototypeType::Swordsman]->Clone();
     }

@@ -25,8 +25,8 @@ namespace Prototype
         WarriorsPrototypeRegistry();
 
     public:
-        std::unique_ptr<IWarrior> GetArcherPrototype();
-        std::unique_ptr<IWarrior> GetSwordsmanPrototype();
+        std::unique_ptr<IWarrior> GetArcherWarrior();
+        std::unique_ptr<IWarrior> GetSwordsmanWarrior();
 
         static WarriorsPrototypeRegistry& GetInstance();
 
