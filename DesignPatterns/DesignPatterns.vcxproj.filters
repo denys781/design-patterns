@@ -33,6 +33,12 @@
     <Filter Include="Source Files\AbstractFactory">
       <UniqueIdentifier>{bd11ba44-8f65-4ac0-8f2c-075aba47ce6d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Builder">
+      <UniqueIdentifier>{6d60fab1-e3ad-465f-9b0b-042aea094b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Builder">
+      <UniqueIdentifier>{d86522a4-51ca-4b12-bc11-a4ec265e65e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -76,6 +82,12 @@
     </ClCompile>
     <ClCompile Include="AbstractFactory\HeavilyArmedWarriorFactory.cpp">
       <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\HttpResponsePackageBuilder.cpp">
+      <Filter>Source Files\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp">
+      <Filter>Source Files\Builder</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +141,18 @@
     </ClInclude>
     <ClInclude Include="AbstractFactory\HeavilyArmedWarriorFactory.h">
       <Filter>Header Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\HttpStructures.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\IHttpPackageBuilder.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\HttpResponsePackageBuilder.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\HttpRequestPackageBuilder.h">
+      <Filter>Header Files\Builder</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
