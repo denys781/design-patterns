@@ -4,7 +4,7 @@
 
 namespace FactoryMethod
 {
-    class PostgreSQLApplicationsRepository : public ApplicationsRepository
+    class PostgreSQLApplicationsRepository final : public ApplicationsRepository
     {
     private:
         std::unique_ptr<IDatabaseEngine> GetDatabaseEngine() override;

@@ -1,10 +1,11 @@
 #pragma once
 
 #include "IWarrior.h"
+#include "IWarriorPrototype.h"
 
 namespace Prototype
 {
-    class Swordsman : public IWarrior
+    class Swordsman : public IWarrior, public IWarriorPrototype
     {
     public:
         std::unique_ptr<IWarrior> Clone() override;

@@ -35,6 +35,7 @@
     <ClInclude Include="FactoryMethod\PostgreSQLDatabaseEngine.h" />
     <ClInclude Include="Prototype\Archer.h" />
     <ClInclude Include="Prototype\IWarrior.h" />
+    <ClInclude Include="Prototype\IWarriorPrototype.h" />
     <ClInclude Include="Prototype\WarriorsPrototypeRegistry.h" />
     <ClInclude Include="Prototype\Swordsman.h" />
     <ClInclude Include="Singleton\Logger.h" />

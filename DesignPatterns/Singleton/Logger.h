@@ -18,6 +18,9 @@ namespace Singleton
         Logger(const Logger&) = delete;
         Logger(Logger&&) = delete;
 
+        Logger& operator=(const Logger&) = delete;
+        Logger& operator=(Logger&&) = delete;
+
         Logger();
 
     public:

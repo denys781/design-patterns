@@ -29,7 +29,7 @@ namespace FactoryMethod
         Table table = databaseEngine->ExecuteQuery(query);
         ApplicationsList applications;
 
-        applications.resize(table.size());
+        applications.reserve(table.size());
 
         for (const auto& row : table)
         {

@@ -82,5 +82,8 @@
     <ClInclude Include="Prototype\WarriorsPrototypeRegistry.h">
       <Filter>Header Files\Prototype</Filter>
     </ClInclude>
+    <ClInclude Include="Prototype\IWarriorPrototype.h">
+      <Filter>Header Files\Prototype</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

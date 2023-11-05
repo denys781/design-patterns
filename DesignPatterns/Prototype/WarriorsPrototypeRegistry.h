@@ -19,6 +19,9 @@ namespace Prototype
         WarriorsPrototypeRegistry(const WarriorsPrototypeRegistry&) = delete;
         WarriorsPrototypeRegistry(WarriorsPrototypeRegistry&&) = delete;
 
+        WarriorsPrototypeRegistry& operator=(const WarriorsPrototypeRegistry&) = delete;
+        WarriorsPrototypeRegistry& operator=(WarriorsPrototypeRegistry&&) = delete;
+
         WarriorsPrototypeRegistry();
 
     public:
@@ -28,6 +31,6 @@ namespace Prototype
         static WarriorsPrototypeRegistry& GetInstance();
 
     private:
-        std::map<PrototypeType, std::unique_ptr<IWarrior>> prototypes_;
+        std::map<PrototypeType, std::unique_ptr<IWarriorPrototype>> prototypes_;
     };
 }

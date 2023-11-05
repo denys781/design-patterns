@@ -1,6 +1,6 @@
 #pragma once
 
-#include <memory>
+#include <cstddef>
 
 namespace Prototype
 {
@@ -9,7 +9,6 @@ namespace Prototype
     public:
         virtual ~IWarrior() = default;
 
-        virtual std::unique_ptr<IWarrior> Clone() = 0;
         virtual std::size_t MakeDamage() = 0;
     };
 }
