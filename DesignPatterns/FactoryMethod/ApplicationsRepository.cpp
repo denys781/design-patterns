@@ -21,7 +21,7 @@ namespace FactoryMethod
     {
         auto databaseEngine = GetDatabaseEngine(); // factory method call
 
-        if (!databaseEngine->Connect())
+        if (!databaseEngine || !databaseEngine->Connect())
         {
             throw std::runtime_error("Database connection has not been established.");
         }
