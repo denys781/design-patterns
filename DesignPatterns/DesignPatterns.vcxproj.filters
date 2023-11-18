@@ -39,6 +39,12 @@
     <Filter Include="Source Files\Builder">
       <UniqueIdentifier>{d86522a4-51ca-4b12-bc11-a4ec265e65e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Proxy">
+      <UniqueIdentifier>{bd339c51-eaf8-480a-9701-db1ae8c8378d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Proxy">
+      <UniqueIdentifier>{5f5549f1-524c-47f6-b104-d7473d307784}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -88,6 +94,12 @@
     </ClCompile>
     <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp">
       <Filter>Source Files\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\Image.cpp">
+      <Filter>Source Files\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\ImageProxy.cpp">
+      <Filter>Source Files\Proxy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +165,15 @@
     </ClInclude>
     <ClInclude Include="Builder\HttpRequestPackageBuilder.h">
       <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\IImage.h">
+      <Filter>Header Files\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\Image.h">
+      <Filter>Header Files\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\ImageProxy.h">
+      <Filter>Header Files\Proxy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

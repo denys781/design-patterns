@@ -34,6 +34,8 @@
     <ClCompile Include="Prototype\Archer.cpp" />
     <ClCompile Include="Prototype\WarriorsPrototypeRegistry.cpp" />
     <ClCompile Include="Prototype\Swordsman.cpp" />
+    <ClCompile Include="Proxy\Image.cpp" />
+    <ClCompile Include="Proxy\ImageProxy.cpp" />
     <ClCompile Include="Singleton\Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +59,9 @@
     <ClInclude Include="Prototype\IWarriorPrototype.h" />
     <ClInclude Include="Prototype\WarriorsPrototypeRegistry.h" />
     <ClInclude Include="Prototype\Swordsman.h" />
+    <ClInclude Include="Proxy\IImage.h" />
+    <ClInclude Include="Proxy\Image.h" />
+    <ClInclude Include="Proxy\ImageProxy.h" />
     <ClInclude Include="Singleton\Logger.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

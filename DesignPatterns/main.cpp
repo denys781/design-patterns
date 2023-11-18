@@ -4,6 +4,7 @@
 #include "Builder\HttpResponsePackageBuilder.h"
 #include "FactoryMethod\PostgreSQLApplicationsRepository.h"
 #include "AbstractFactory\LightlyArmedWarriorFactory.h"
+#include "Proxy\ImageProxy.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -104,7 +105,20 @@ void ShowAbstractFactoryPattern()
     std::cout << "Archer's damage is " << archerPtr->MakeDamage() << '\n';
     std::cout << "Swordsman's damage is " << swordsmanPtr->MakeDamage() << '\n';
 
-    std::cout << "Abstract Factory pattern =====";
+    std::cout << "Abstract Factory pattern =====\n\n";
+}
+
+void ShowProxyPattern()
+{
+    std::cout << "===== Proxy pattern\n";
+
+    using namespace Proxy;
+
+    std::unique_ptr<IImage> imageProxyPtr =
+        std::make_unique<ImageProxy>("ascii_image.txt");
+    imageProxyPtr->PrintImage(&std::cout);
+
+    std::cout << "\nProxy pattern =====\n\n";
 }
 
 int main(int, char**)
@@ -114,6 +128,7 @@ int main(int, char**)
     ShowBuilderPattern();
     ShowFactoryMethodPattern();
     ShowAbstractFactoryPattern();
+    ShowProxyPattern();
 
     return std::cin.get();
 }
