@@ -45,6 +45,12 @@
     <Filter Include="Source Files\Proxy">
       <UniqueIdentifier>{5f5549f1-524c-47f6-b104-d7473d307784}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Decorator">
+      <UniqueIdentifier>{0461065e-7766-4f45-83eb-759775f99033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Decorator">
+      <UniqueIdentifier>{7f5ce1e1-55ed-495a-a232-e99e858575ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -100,6 +106,12 @@
     </ClCompile>
     <ClCompile Include="Proxy\ImageProxy.cpp">
       <Filter>Source Files\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\StreamWriter.cpp">
+      <Filter>Source Files\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\XorStreamWriterDecorator.cpp">
+      <Filter>Source Files\Decorator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +186,15 @@
     </ClInclude>
     <ClInclude Include="Proxy\ImageProxy.h">
       <Filter>Header Files\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\IStreamWriter.h">
+      <Filter>Header Files\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\StreamWriter.h">
+      <Filter>Header Files\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\XorStreamWriterDecorator.h">
+      <Filter>Header Files\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

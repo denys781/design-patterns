@@ -10,7 +10,10 @@ namespace Proxy
 
     void Image::PrintImage(std::ostream* stream)
     {
-        stream->write(reinterpret_cast<const char*>(image_.data()), image_.size());
+        if (stream)
+        {
+            stream->write(reinterpret_cast<const char*>(image_.data()), image_.size());
+        }
     }
 
     Bytes Image::GetImage()

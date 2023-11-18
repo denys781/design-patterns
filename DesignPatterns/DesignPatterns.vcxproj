@@ -27,6 +27,8 @@
     <ClCompile Include="AbstractFactory\LightlyArmedWarriorFactory.cpp" />
     <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp" />
     <ClCompile Include="Builder\HttpResponsePackageBuilder.cpp" />
+    <ClCompile Include="Decorator\StreamWriter.cpp" />
+    <ClCompile Include="Decorator\XorStreamWriterDecorator.cpp" />
     <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
@@ -50,6 +52,9 @@
     <ClInclude Include="Builder\HttpStructures.h" />
     <ClInclude Include="Builder\IHttpPackageBuilder.h" />
     <ClInclude Include="Builder\HttpRequestPackageBuilder.h" />
+    <ClInclude Include="Decorator\IStreamWriter.h" />
+    <ClInclude Include="Decorator\StreamWriter.h" />
+    <ClInclude Include="Decorator\XorStreamWriterDecorator.h" />
     <ClInclude Include="FactoryMethod\ApplicationsRepository.h" />
     <ClInclude Include="FactoryMethod\IDatabaseEngine.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h" />

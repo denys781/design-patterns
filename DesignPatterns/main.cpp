@@ -5,11 +5,13 @@
 #include "FactoryMethod\PostgreSQLApplicationsRepository.h"
 #include "AbstractFactory\LightlyArmedWarriorFactory.h"
 #include "Proxy\ImageProxy.h"
+#include "Decorator\StreamWriter.h"
+#include "Decorator\XorStreamWriterDecorator.h"
 #include <iostream>
 
 void ShowSingletonPattern()
 {
-    std::cout << "===== Singleton pattern\n";
+    std::cout << "\>\>\> Singleton pattern \<\<\<\n";
 
     using namespace Singleton;
 
@@ -19,13 +21,11 @@ void ShowSingletonPattern()
     loggerInst.Log(LogLevel::Info, "Info log");
     loggerInst.Log(LogLevel::Warn, "Warn log");
     loggerInst.Log(LogLevel::Error, "Error log");
-
-    std::cout << "Singleton pattern =====\n\n";
 }
 
 void ShowPrototypePattern()
 {
-    std::cout << "===== Prototype pattern\n";
+    std::cout << "\n\>\>\> Prototype pattern \<\<\<\n";
 
     using namespace Prototype;
 
@@ -35,13 +35,11 @@ void ShowPrototypePattern()
 
     std::cout << "Archer's prototype damage is " << archerPtr->MakeDamage() << '\n';
     std::cout << "Swordsman's prototype damage is " << swordsmanPtr->MakeDamage() << '\n';
-
-    std::cout << "Prototype pattern =====\n\n";
 }
 
 void ShowBuilderPattern()
 {
-    std::cout << "===== Builder pattern\n";
+    std::cout << "\n\>\>\> Builder pattern \<\<\<\n";
 
     using namespace Builder;
 
@@ -57,9 +55,7 @@ void ShowBuilderPattern()
     std::cout
         << "Request:\t" << httpRequestPackage.request_ << '\n'
         << "Headers:\t" << *httpRequestPackage.headers_.begin() << '\n'
-        << "Body:\t\t" << httpRequestPackage.body_ << '\n';
-
-    std::cout << "---------------------\n";
+        << "Body:\t\t" << httpRequestPackage.body_ << "\n\n";
 
     auto httpResponseBuilderPtr = std::make_shared<HttpResponsePackageBuilder>();
     httpBuilderPtr = httpResponseBuilderPtr;
@@ -73,13 +69,11 @@ void ShowBuilderPattern()
         << "Status:\t\t" << httpResponsePackage.status_ << '\n'
         << "Headers:\t" << *httpResponsePackage.headers_.begin() << '\n'
         << "Body:\t\t" << httpResponsePackage.body_ << '\n';
-
-    std::cout << "Builder pattern =====\n\n";
 }
 
 void ShowFactoryMethodPattern()
 {
-    std::cout << "===== Factory Method pattern\n";
+    std::cout << "\n\>\>\> Factory Method pattern \<\<\<\n";
 
     using namespace FactoryMethod;
 
@@ -87,13 +81,11 @@ void ShowFactoryMethodPattern()
     ApplicationsList applicationsList = repository.GetAvailableApplications();
 
     // any usage of applicationsList
-
-    std::cout << "Factory Method pattern =====\n\n";
 }
 
 void ShowAbstractFactoryPattern()
 {
-    std::cout << "===== Abstract Factory pattern\n";
+    std::cout << "\n\>\>\> Abstract Factory pattern \<\<\<\n";
 
     using namespace AbstractFactory;
 
@@ -104,21 +96,35 @@ void ShowAbstractFactoryPattern()
 
     std::cout << "Archer's damage is " << archerPtr->MakeDamage() << '\n';
     std::cout << "Swordsman's damage is " << swordsmanPtr->MakeDamage() << '\n';
-
-    std::cout << "Abstract Factory pattern =====\n\n";
 }
 
 void ShowProxyPattern()
 {
-    std::cout << "===== Proxy pattern\n";
+    std::cout << "\n\>\>\> Proxy pattern \<\<\<\n";
 
     using namespace Proxy;
 
     std::unique_ptr<IImage> imageProxyPtr =
         std::make_unique<ImageProxy>("ascii_image.txt");
     imageProxyPtr->PrintImage(&std::cout);
+}
 
-    std::cout << "\nProxy pattern =====\n\n";
+void ShowDecoratorPattern()
+{
+    std::cout << "\n\n\>\>\> Decorator pattern \<\<\<\n";
+
+    using namespace Decorator;
+
+    std::shared_ptr<IStreamWriter> xorStreamWriterPtr =
+        std::make_shared<XorStreamWriterDecorator>(
+            std::make_shared<StreamWriter>(&std::cout),
+            1
+        );
+
+    std::cout << "Xor-encrypted \'Hello World\':\t";
+    (*xorStreamWriterPtr)
+        .Write("Hello World!")
+        .Flush();
 }
 
 int main(int, char**)
@@ -129,6 +135,7 @@ int main(int, char**)
     ShowFactoryMethodPattern();
     ShowAbstractFactoryPattern();
     ShowProxyPattern();
+    ShowDecoratorPattern();
 
     return std::cin.get();
 }
