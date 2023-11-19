@@ -29,6 +29,8 @@
     <ClCompile Include="Adapter\CrossbowAdapter.cpp" />
     <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp" />
     <ClCompile Include="Builder\HttpResponsePackageBuilder.cpp" />
+    <ClCompile Include="Composite\Equipment.cpp" />
+    <ClCompile Include="Composite\CompositeComponent.cpp" />
     <ClCompile Include="Decorator\StreamWriter.cpp" />
     <ClCompile Include="Decorator\XorStreamWriterDecorator.cpp" />
     <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp" />
@@ -57,6 +59,8 @@
     <ClInclude Include="Builder\HttpStructures.h" />
     <ClInclude Include="Builder\IHttpPackageBuilder.h" />
     <ClInclude Include="Builder\HttpRequestPackageBuilder.h" />
+    <ClInclude Include="Composite\Equipment.h" />
+    <ClInclude Include="Composite\CompositeEquipment.h" />
     <ClInclude Include="Decorator\IStreamWriter.h" />
     <ClInclude Include="Decorator\StreamWriter.h" />
     <ClInclude Include="Decorator\XorStreamWriterDecorator.h" />

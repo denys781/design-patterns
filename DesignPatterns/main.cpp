@@ -8,6 +8,7 @@
 #include "Decorator\StreamWriter.h"
 #include "Decorator\XorStreamWriterDecorator.h"
 #include "Adapter\CrossbowAdapter.h"
+#include "Composite\CompositeEquipment.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -146,6 +147,26 @@ void ShowAdapterPattern()
         << "Crossbow damage is " << crossbowAdapterPtr->MakeDamage();
 }
 
+void ShowCompositePattern()
+{
+    std::cout << "\n\n\>\>\> Composite pattern \<\<\<\n";
+
+    using namespace Composite;
+
+    auto cpuEqPtr = std::make_shared<Equipment>("Intel processor", 3000.);
+    auto biosChipEqPtr = std::make_shared<Equipment>("BIOS chip", 1000.);
+    auto memorySlotEqPtr = std::make_shared<Equipment>("Memory slot", 1500.);
+
+    std::shared_ptr<Equipment> motherBoardEqPtr =
+        std::make_shared<CompositeEquipment>("Motherboard", 800.);
+
+    motherBoardEqPtr->Add(cpuEqPtr);
+    motherBoardEqPtr->Add(biosChipEqPtr);
+    motherBoardEqPtr->Add(memorySlotEqPtr);
+
+    std::cout << motherBoardEqPtr->GetName() << " with its components costs " << motherBoardEqPtr->GetPrice();
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -156,6 +177,7 @@ int main(int, char**)
     ShowProxyPattern();
     ShowDecoratorPattern();
     ShowAdapterPattern();
+    ShowCompositePattern();
 
     return std::cin.get();
 }
