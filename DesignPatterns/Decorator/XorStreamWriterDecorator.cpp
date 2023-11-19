@@ -7,33 +7,33 @@ namespace Decorator
         std::shared_ptr<IStreamWriter> stream,
         std::uint8_t key
     )
-        : stream_(stream)
-        , key_(key)
     {
+        if (!stream)
+        {
+            throw std::runtime_error(
+                "XorStreamWriterDecorator can't be constructed with null pointer."
+            );
+        }
+        stream_ = stream;
+        key_ = key;
     }
 
     IStreamWriter& XorStreamWriterDecorator::Write(const std::string& data)
     {
-        if (stream_)
+        std::string buf(data);
+
+        std::transform(data.begin(), data.end(), buf.begin(),
+            [this](char byte) -> char
         {
-            std::string buf(data.size(), 0);
+            return byte ^ key_;
+        });
 
-            std::transform(data.begin(), data.end(), buf.begin(),
-                [this](char byte) -> char
-            {
-                return byte ^ key_;
-            });
-
-            stream_->Write(buf);
-        }
+        stream_->Write(buf);
         return *this;
     }
 
     void XorStreamWriterDecorator::Flush()
     {
-        if (stream_)
-        {
-            stream_->Flush();
-        }
+        stream_->Flush();
     }
 }

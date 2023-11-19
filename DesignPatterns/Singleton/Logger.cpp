@@ -1,6 +1,6 @@
 #include "Logger.h"
 #include <map>
-#include <sstream>
+#include <string>
 
 namespace
 {
@@ -30,19 +30,19 @@ namespace Singleton
     void Logger::SetStream(std::ostream* stream)
     {
         std::lock_guard<std::mutex> lock(mutex_);
-        stream_ = stream;
+        stream_ = stream; // stream can be null pointer to reset stream_
     }
 
     void Logger::Log(LogLevel level, const std::string& data)
     {
-        std::ostringstream buffer;
-        buffer << GetLogLevelStringRepresentation(level) << ":\t" << data << '\n';
-
         std::lock_guard<std::mutex> lock(mutex_);
-        if (stream_ != nullptr)
+        if (!stream_)
         {
-            *stream_ << buffer.str() << std::flush;
+            return;
         }
+
+        *stream_
+            << GetLogLevelStringRepresentation(level) << ":\t" << data << '\n' << std::flush;
     }
 
     Logger& Logger::GetInstance()

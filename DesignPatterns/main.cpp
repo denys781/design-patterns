@@ -115,10 +115,11 @@ void ShowDecoratorPattern()
 
     using namespace Decorator;
 
+    const std::uint8_t key = 1;
     std::shared_ptr<IStreamWriter> xorStreamWriterPtr =
         std::make_shared<XorStreamWriterDecorator>(
             std::make_shared<StreamWriter>(&std::cout),
-            1
+            key
         );
 
     std::cout << "Xor-encrypted \'Hello World\':\t";

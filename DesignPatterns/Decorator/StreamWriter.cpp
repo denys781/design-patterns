@@ -1,26 +1,27 @@
 #include "StreamWriter.h"
+#include <stdexcept>
 
 namespace Decorator
 {
     StreamWriter::StreamWriter(std::ostream* stream)
-        : stream_(stream)
     {
+        if (!stream)
+        {
+            throw std::runtime_error(
+                "StreamWriter can't be constructed with null pointer."
+            );
+        }
+        stream_ = stream;
     }
 
     IStreamWriter& StreamWriter::Write(const std::string& data)
     {
-        if (stream_)
-        {
-            *stream_ << data;
-        }
+        *stream_ << data;
         return *this;
     }
 
     void StreamWriter::Flush()
     {
-        if (stream_)
-        {
-            stream_->flush();
-        }
+        stream_->flush();
     }
 }
