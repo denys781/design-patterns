@@ -7,6 +7,7 @@
 #include "Proxy\ImageProxy.h"
 #include "Decorator\StreamWriter.h"
 #include "Decorator\XorStreamWriterDecorator.h"
+#include "Adapter\CrossbowAdapter.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -128,6 +129,23 @@ void ShowDecoratorPattern()
         .Flush();
 }
 
+void ShowAdapterPattern()
+{
+    std::cout << "\n\n\>\>\> Adapter pattern \<\<\<\n";
+
+    using namespace Adapter;
+
+    std::shared_ptr<IWeapon> crossbowAdapterPtr =
+        std::make_shared<CrossbowAdapter>();
+
+    std::cout
+        << "Old legacy \'Crossbow\' class has been adapted by its own adapter \'CrossbowAdapter\' "
+        << "and now it has modern interface'.\n";
+    std::cout
+        << "Crossbow name is \'" << crossbowAdapterPtr->GetName() << "\'\n"
+        << "Crossbow damage is " << crossbowAdapterPtr->MakeDamage();
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -137,6 +155,7 @@ int main(int, char**)
     ShowAbstractFactoryPattern();
     ShowProxyPattern();
     ShowDecoratorPattern();
+    ShowAdapterPattern();
 
     return std::cin.get();
 }

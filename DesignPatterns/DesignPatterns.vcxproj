@@ -25,6 +25,8 @@
     <ClCompile Include="AbstractFactory\LightlyArmedArcher.cpp" />
     <ClCompile Include="AbstractFactory\LightlyArmedSwordsman.cpp" />
     <ClCompile Include="AbstractFactory\LightlyArmedWarriorFactory.cpp" />
+    <ClCompile Include="Adapter\Crossbow.cpp" />
+    <ClCompile Include="Adapter\CrossbowAdapter.cpp" />
     <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp" />
     <ClCompile Include="Builder\HttpResponsePackageBuilder.cpp" />
     <ClCompile Include="Decorator\StreamWriter.cpp" />
@@ -48,6 +50,9 @@
     <ClInclude Include="AbstractFactory\LightlyArmedArcher.h" />
     <ClInclude Include="AbstractFactory\LightlyArmedSwordsman.h" />
     <ClInclude Include="AbstractFactory\LightlyArmedWarriorFactory.h" />
+    <ClInclude Include="Adapter\CrossbowAdapter.h" />
+    <ClInclude Include="Adapter\IWeapon.h" />
+    <ClInclude Include="Adapter\Crossbow.h" />
     <ClInclude Include="Builder\HttpResponsePackageBuilder.h" />
     <ClInclude Include="Builder\HttpStructures.h" />
     <ClInclude Include="Builder\IHttpPackageBuilder.h" />

@@ -51,6 +51,12 @@
     <Filter Include="Source Files\Decorator">
       <UniqueIdentifier>{7f5ce1e1-55ed-495a-a232-e99e858575ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Adapter">
+      <UniqueIdentifier>{75e6e093-a376-47a8-929c-31cbfbd49816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Adapter">
+      <UniqueIdentifier>{7a3138c9-2719-4725-85fc-841f59265154}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -112,6 +118,12 @@
     </ClCompile>
     <ClCompile Include="Decorator\XorStreamWriterDecorator.cpp">
       <Filter>Source Files\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter\Crossbow.cpp">
+      <Filter>Source Files\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter\CrossbowAdapter.cpp">
+      <Filter>Source Files\Adapter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +207,15 @@
     </ClInclude>
     <ClInclude Include="Decorator\XorStreamWriterDecorator.h">
       <Filter>Header Files\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\IWeapon.h">
+      <Filter>Header Files\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\Crossbow.h">
+      <Filter>Header Files\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\CrossbowAdapter.h">
+      <Filter>Header Files\Adapter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
