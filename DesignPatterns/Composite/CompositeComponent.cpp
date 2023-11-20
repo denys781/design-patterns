@@ -5,7 +5,8 @@ namespace Composite
 {
     void CompositeEquipment::Add(std::shared_ptr<Equipment> equipment)
     {
-        if (equipment)
+        if (equipment &&
+            std::find(equipments_.begin(), equipments_.end(), equipment) == equipments_.end())
         {
             equipments_.push_back(equipment);
         }
