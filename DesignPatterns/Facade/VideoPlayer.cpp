@@ -6,12 +6,12 @@ namespace Facade
     {
         void VideoPlayer::Load(const std::string& videoPath)
         {
-            // TODO: implement real video loading
+            // Video loading
         }
 
         void VideoPlayer::PlayVideo()
         {
-            // TODO: implement real video playing
+            // Video playing
         }
     }
 }

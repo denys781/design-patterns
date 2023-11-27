@@ -7,7 +7,7 @@ namespace Proxy
     class Image final : public IImage
     {
     public:
-        Image(const std::string&);
+        explicit Image(const std::string&);
 
         void PrintImage(std::ostream*) override;
         Bytes GetImage() override;

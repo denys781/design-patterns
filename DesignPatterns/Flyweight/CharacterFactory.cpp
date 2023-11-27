@@ -14,7 +14,7 @@ namespace Flyweight
         {
             const auto characterPtr = std::make_shared<Character>(character);
 
-            characters_.insert(std::make_pair(character, characterPtr));
+            characters_.emplace(std::make_pair(character, characterPtr));
             return characterPtr;
         }
         return characterIt->second;

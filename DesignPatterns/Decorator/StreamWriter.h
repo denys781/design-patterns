@@ -8,7 +8,7 @@ namespace Decorator
     class StreamWriter : public IStreamWriter
     {
     public:
-        StreamWriter(std::ostream*);
+        explicit StreamWriter(std::ostream*);
 
         IStreamWriter& Write(const std::string&) override;
         void Flush() override;

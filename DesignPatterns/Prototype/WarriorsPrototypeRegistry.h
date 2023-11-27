@@ -15,20 +15,21 @@ namespace Prototype
 
     class WarriorsPrototypeRegistry final
     {
-    private:
+    public:
         WarriorsPrototypeRegistry(const WarriorsPrototypeRegistry&) = delete;
         WarriorsPrototypeRegistry(WarriorsPrototypeRegistry&&) = delete;
 
         WarriorsPrototypeRegistry& operator=(const WarriorsPrototypeRegistry&) = delete;
         WarriorsPrototypeRegistry& operator=(WarriorsPrototypeRegistry&&) = delete;
 
-        WarriorsPrototypeRegistry();
-
     public:
         std::unique_ptr<IWarrior> GetArcherWarrior();
         std::unique_ptr<IWarrior> GetSwordsmanWarrior();
 
         static WarriorsPrototypeRegistry& GetInstance();
+
+    private:
+        WarriorsPrototypeRegistry();
 
     private:
         std::map<PrototypeType, std::unique_ptr<IWarriorPrototype>> prototypes_;

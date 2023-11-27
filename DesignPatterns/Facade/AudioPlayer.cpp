@@ -6,12 +6,12 @@ namespace Facade
     {
         void AudioPlayer::Load(const std::string& audioPath)
         {
-            // TODO: implement real audio loading
+            // Audio loading
         }
 
         void AudioPlayer::PlayAudio()
         {
-            // TODO: implement real audio playing
+            // Audio playing
         }
     }
 }

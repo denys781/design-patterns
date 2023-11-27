@@ -14,6 +14,6 @@ namespace Flyweight
         std::uint16_t column
     ) const
     {
-        // TODO: implement real character displaying
+        // Character displaying
     }
 }

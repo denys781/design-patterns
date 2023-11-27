@@ -208,7 +208,7 @@ void ShowFlyweightPattern()
     auto& characterFactoryInst = CharacterFactory::GetInstance();
     auto charPtr = characterFactoryInst.GetCharacter('x');
 
-    charPtr->Display("Times New Roman", 16, 100, 25);
+    // charPtr->Display("Times New Roman", 16, 100, 25);
 
     std::cout << "NO CONSOLE OUTPUT FOR PATTERN\n";
 }
