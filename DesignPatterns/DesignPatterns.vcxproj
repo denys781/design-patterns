@@ -45,6 +45,8 @@
     <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
+    <ClCompile Include="Flyweight\Character.cpp" />
+    <ClCompile Include="Flyweight\CharacterFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Prototype\Archer.cpp" />
     <ClCompile Include="Prototype\WarriorsPrototypeRegistry.cpp" />
@@ -87,6 +89,8 @@
     <ClInclude Include="FactoryMethod\IDatabaseEngine.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLDatabaseEngine.h" />
+    <ClInclude Include="Flyweight\Character.h" />
+    <ClInclude Include="Flyweight\CharacterFactory.h" />
     <ClInclude Include="Prototype\Archer.h" />
     <ClInclude Include="Prototype\IWarrior.h" />
     <ClInclude Include="Prototype\IWarriorPrototype.h" />

@@ -75,6 +75,12 @@
     <Filter Include="Source Files\Bridge">
       <UniqueIdentifier>{f503f42b-9bf0-4aa6-9b2d-7b1e3b11728c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Flyweight">
+      <UniqueIdentifier>{15f9201e-d827-433e-ab27-4b83ea4dfd61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Flyweight">
+      <UniqueIdentifier>{aac04f9f-1477-4840-9d40-7425390cd9d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -175,6 +181,12 @@
     </ClCompile>
     <ClCompile Include="Bridge\Time12H.cpp">
       <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight\Character.cpp">
+      <Filter>Source Files\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight\CharacterFactory.cpp">
+      <Filter>Source Files\Flyweight</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -303,6 +315,12 @@
     </ClInclude>
     <ClInclude Include="Bridge\Meridiem.h">
       <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight\Character.h">
+      <Filter>Header Files\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight\CharacterFactory.h">
+      <Filter>Header Files\Flyweight</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

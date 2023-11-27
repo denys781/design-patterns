@@ -12,6 +12,7 @@
 #include "Facade\MediaPlayer.h"
 #include "Bridge\Time12H.h"
 #include "Bridge\Time24H.h"
+#include "Flyweight\CharacterFactory.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -187,7 +188,7 @@ void ShowFacadePattern()
 
 void ShowBridgePattern()
 {
-    std::cout << "\n\n\>\>\> Bridge pattern \<\<\<\n";
+    std::cout << "\n\>\>\> Bridge pattern \<\<\<\n";
 
     using namespace Bridge;
 
@@ -196,6 +197,20 @@ void ShowBridgePattern()
 
     Time12H time12h(4, 55, 15, Meridiem::PM);
     std::cout << "12-h formatted time: " << time12h.GetFormattedTime() << '\n';
+}
+
+void ShowFlyweightPattern()
+{
+    std::cout << "\n\>\>\> Flyweight pattern \<\<\<\n";
+
+    using namespace Flyweight;
+
+    auto& characterFactoryInst = CharacterFactory::GetInstance();
+    auto charPtr = characterFactoryInst.GetCharacter('x');
+
+    charPtr->Display("Times New Roman", 16, 100, 25);
+
+    std::cout << "NO CONSOLE OUTPUT FOR PATTERN\n";
 }
 
 int main(int, char**)
@@ -211,6 +226,7 @@ int main(int, char**)
     ShowCompositePattern();
     ShowFacadePattern();
     ShowBridgePattern();
+    ShowFlyweightPattern();
 
     return std::cin.get();
 }
