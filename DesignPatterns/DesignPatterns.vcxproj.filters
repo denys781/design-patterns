@@ -63,6 +63,12 @@
     <Filter Include="Source Files\Composite">
       <UniqueIdentifier>{f4270198-c61f-4869-a6bd-300f58d6fe03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Facade">
+      <UniqueIdentifier>{7b05c0e1-8f66-40a5-bd2d-93d3af748fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Facade">
+      <UniqueIdentifier>{ae2c8cfb-940b-497d-bb92-eb80aa47f357}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -136,6 +142,15 @@
     </ClCompile>
     <ClCompile Include="Composite\Equipment.cpp">
       <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\AudioPlayer.cpp">
+      <Filter>Source Files\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\VideoPlayer.cpp">
+      <Filter>Source Files\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\MediaPlayer.cpp">
+      <Filter>Source Files\Facade</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +249,15 @@
     </ClInclude>
     <ClInclude Include="Composite\CompositeEquipment.h">
       <Filter>Header Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\AudioPlayer.h">
+      <Filter>Header Files\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\VideoPlayer.h">
+      <Filter>Header Files\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\MediaPlayer.h">
+      <Filter>Header Files\Facade</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -9,6 +9,7 @@
 #include "Decorator\XorStreamWriterDecorator.h"
 #include "Adapter\CrossbowAdapter.h"
 #include "Composite\CompositeEquipment.h"
+#include "Facade\MediaPlayer.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -83,6 +84,7 @@ void ShowFactoryMethodPattern()
     ApplicationsList applicationsList = repository.GetAvailableApplications();
 
     // any usage of applicationsList
+    std::cout << "NO CONSOLE OUTPUT FOR PATTERN\n";
 }
 
 void ShowAbstractFactoryPattern()
@@ -167,6 +169,20 @@ void ShowCompositePattern()
     std::cout << motherBoardEqPtr->GetName() << " with its components costs " << motherBoardEqPtr->GetPrice();
 }
 
+void ShowFacadePattern()
+{
+    std::cout << "\n\n\>\>\> Facade pattern \<\<\<\n";
+
+    using namespace Facade;
+
+    auto mediaPlayerPtr = std::make_unique<MediaPlayer>();
+
+    mediaPlayerPtr->PlayAudio("path_to_audio");
+    mediaPlayerPtr->PlayVideo("path_to_video");
+
+    std::cout << "NO CONSOLE OUTPUT FOR PATTERN\n";
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -178,6 +194,7 @@ int main(int, char**)
     ShowDecoratorPattern();
     ShowAdapterPattern();
     ShowCompositePattern();
+    ShowFacadePattern();
 
     return std::cin.get();
 }

@@ -33,6 +33,9 @@
     <ClCompile Include="Composite\CompositeComponent.cpp" />
     <ClCompile Include="Decorator\StreamWriter.cpp" />
     <ClCompile Include="Decorator\XorStreamWriterDecorator.cpp" />
+    <ClCompile Include="Facade\AudioPlayer.cpp" />
+    <ClCompile Include="Facade\MediaPlayer.cpp" />
+    <ClCompile Include="Facade\VideoPlayer.cpp" />
     <ClCompile Include="FactoryMethod\ApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLApplicationsRepository.cpp" />
     <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
@@ -64,6 +67,9 @@
     <ClInclude Include="Decorator\IStreamWriter.h" />
     <ClInclude Include="Decorator\StreamWriter.h" />
     <ClInclude Include="Decorator\XorStreamWriterDecorator.h" />
+    <ClInclude Include="Facade\AudioPlayer.h" />
+    <ClInclude Include="Facade\MediaPlayer.h" />
+    <ClInclude Include="Facade\VideoPlayer.h" />
     <ClInclude Include="FactoryMethod\ApplicationsRepository.h" />
     <ClInclude Include="FactoryMethod\IDatabaseEngine.h" />
     <ClInclude Include="FactoryMethod\PostgreSQLApplicationsRepository.h" />
