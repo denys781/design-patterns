@@ -27,6 +27,12 @@
     <ClCompile Include="AbstractFactory\LightlyArmedWarriorFactory.cpp" />
     <ClCompile Include="Adapter\Crossbow.cpp" />
     <ClCompile Include="Adapter\CrossbowAdapter.cpp" />
+    <ClCompile Include="Bridge\Time.cpp" />
+    <ClCompile Include="Bridge\Time12H.cpp" />
+    <ClCompile Include="Bridge\Time12HImp.cpp" />
+    <ClCompile Include="Bridge\Time24H.cpp" />
+    <ClCompile Include="Bridge\Time24HImp.cpp" />
+    <ClCompile Include="Bridge\TimeImp.cpp" />
     <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp" />
     <ClCompile Include="Builder\HttpResponsePackageBuilder.cpp" />
     <ClCompile Include="Composite\Equipment.cpp" />
@@ -58,6 +64,13 @@
     <ClInclude Include="Adapter\CrossbowAdapter.h" />
     <ClInclude Include="Adapter\IWeapon.h" />
     <ClInclude Include="Adapter\Crossbow.h" />
+    <ClInclude Include="Bridge\Meridiem.h" />
+    <ClInclude Include="Bridge\Time.h" />
+    <ClInclude Include="Bridge\Time12H.h" />
+    <ClInclude Include="Bridge\Time12HImp.h" />
+    <ClInclude Include="Bridge\Time24H.h" />
+    <ClInclude Include="Bridge\Time24HImp.h" />
+    <ClInclude Include="Bridge\TimeImp.h" />
     <ClInclude Include="Builder\HttpResponsePackageBuilder.h" />
     <ClInclude Include="Builder\HttpStructures.h" />
     <ClInclude Include="Builder\IHttpPackageBuilder.h" />

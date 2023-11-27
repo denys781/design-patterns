@@ -10,6 +10,8 @@
 #include "Adapter\CrossbowAdapter.h"
 #include "Composite\CompositeEquipment.h"
 #include "Facade\MediaPlayer.h"
+#include "Bridge\Time12H.h"
+#include "Bridge\Time24H.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -183,6 +185,19 @@ void ShowFacadePattern()
     std::cout << "NO CONSOLE OUTPUT FOR PATTERN\n";
 }
 
+void ShowBridgePattern()
+{
+    std::cout << "\n\n\>\>\> Bridge pattern \<\<\<\n";
+
+    using namespace Bridge;
+
+    Time24H time24h(16, 55, 15);
+    std::cout << "24-h formatted time: " << time24h.GetFormattedTime() << '\n';
+
+    Time12H time12h(4, 55, 15, Meridiem::PM);
+    std::cout << "12-h formatted time: " << time12h.GetFormattedTime() << '\n';
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -195,6 +210,7 @@ int main(int, char**)
     ShowAdapterPattern();
     ShowCompositePattern();
     ShowFacadePattern();
+    ShowBridgePattern();
 
     return std::cin.get();
 }

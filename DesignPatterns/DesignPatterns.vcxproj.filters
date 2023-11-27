@@ -69,6 +69,12 @@
     <Filter Include="Source Files\Facade">
       <UniqueIdentifier>{ae2c8cfb-940b-497d-bb92-eb80aa47f357}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Bridge">
+      <UniqueIdentifier>{a455a51d-4361-4cae-b383-a49eb0050889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bridge">
+      <UniqueIdentifier>{f503f42b-9bf0-4aa6-9b2d-7b1e3b11728c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -151,6 +157,24 @@
     </ClCompile>
     <ClCompile Include="Facade\MediaPlayer.cpp">
       <Filter>Source Files\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\TimeImp.cpp">
+      <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Time24HImp.cpp">
+      <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Time12HImp.cpp">
+      <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Time.cpp">
+      <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Time24H.cpp">
+      <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Time12H.cpp">
+      <Filter>Source Files\Bridge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +282,27 @@
     </ClInclude>
     <ClInclude Include="Facade\MediaPlayer.h">
       <Filter>Header Files\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\TimeImp.h">
+      <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Time24HImp.h">
+      <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Time12HImp.h">
+      <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Time.h">
+      <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Time24H.h">
+      <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Time12H.h">
+      <Filter>Header Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Meridiem.h">
+      <Filter>Header Files\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
