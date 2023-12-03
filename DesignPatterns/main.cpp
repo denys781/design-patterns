@@ -54,13 +54,15 @@ void ShowBuilderPattern()
 
     (*httpBuilderPtr)
         .SetRequest("POST /archieve/script.bat HTTP/1.1")
-        .SetHeaders({"Host: foo.example"})
-        .SetBody("script as plain text");
+        .SetHeaders({{std::make_pair("Host", "foo.example")}})
+        .SetBody("some script as plain text");
     HttpRequestPackage httpRequestPackage = httpRequestBuilderPtr->GetConstructedHttpRequestPackage();
 
     std::cout
         << "Request:\t" << httpRequestPackage.request_ << '\n'
-        << "Headers:\t" << *httpRequestPackage.headers_.begin() << '\n'
+        << "Headers:\t"
+            << httpRequestPackage.headers_.begin()->first << ": "
+            << httpRequestPackage.headers_.begin()->second << '\n'
         << "Body:\t\t" << httpRequestPackage.body_ << "\n\n";
 
     auto httpResponseBuilderPtr = std::make_shared<HttpResponsePackageBuilder>();
@@ -68,12 +70,14 @@ void ShowBuilderPattern()
 
     (*httpBuilderPtr)
         .SetStatus("HTTP/1.1 200 OK")
-        .SetHeaders({"Server: Apache"});
+        .SetHeaders({{std::make_pair("Server", "Apache")}});
     HttpResponsePackage httpResponsePackage = httpResponseBuilderPtr->GetConstructedHttpResponsePackage();
 
     std::cout
         << "Status:\t\t" << httpResponsePackage.status_ << '\n'
-        << "Headers:\t" << *httpResponsePackage.headers_.begin() << '\n'
+        << "Headers:\t"
+            << httpResponsePackage.headers_.begin()->first << ": "
+            << httpResponsePackage.headers_.begin()->second << '\n'
         << "Body:\t\t" << httpResponsePackage.body_ << '\n';
 }
 

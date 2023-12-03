@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <set>
+#include <map>
 
 namespace Builder
 {
-    using HeadersList = std::set<std::string>;
+    using HeadersList = std::map<std::string, std::string>;
 
     struct CommonHttpPackagePart
     {
