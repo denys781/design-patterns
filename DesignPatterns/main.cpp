@@ -18,6 +18,8 @@
 #include "Command/TakeCashCommand.h"
 #include "Observer/Person.h"
 #include "Observer/ConsoleListener.h"
+#include "ChainOfResponsibility/ConsoleLogger.h"
+#include "ChainOfResponsibility/FileLogger.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -271,6 +273,21 @@ void ShowObserverPattern()
     std::cout << "Person is " << personPtr->GetFirstName() << ' ' << personPtr->GetLastName() << ".\n";
 }
 
+void ShowChainOfResponsibilityPattern()
+{
+    std::cout << "\n\>\>\> Chain of responsibility pattern \<\<\<\n";
+
+    using namespace ChainOfResponsibility;
+
+    auto consoleLoggerPtr = std::make_shared<ConsoleLogger>(LogLevel::Info);
+    auto fileLoggerPtr = std::make_shared<FileLogger>(LogLevel::Error, "file_path.txt");
+
+    fileLoggerPtr->SetNext(consoleLoggerPtr);
+
+    fileLoggerPtr->Log(LogLevel::Info, "Some info text to log.");
+    fileLoggerPtr->Log(LogLevel::Warn, "Some warning text to log.");
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -287,6 +304,7 @@ int main(int, char**)
     ShowFlyweightPattern();
     ShowCommandPattern();
     ShowObserverPattern();
+    ShowChainOfResponsibilityPattern();
 
     return std::cin.get();
 }

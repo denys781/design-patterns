@@ -35,6 +35,9 @@
     <ClCompile Include="Bridge\TimeImp.cpp" />
     <ClCompile Include="Builder\HttpRequestPackageBuilder.cpp" />
     <ClCompile Include="Builder\HttpResponsePackageBuilder.cpp" />
+    <ClCompile Include="ChainOfResponsibility\BaseLogger.cpp" />
+    <ClCompile Include="ChainOfResponsibility\ConsoleLogger.cpp" />
+    <ClCompile Include="ChainOfResponsibility\FileLogger.cpp" />
     <ClCompile Include="Command\BankAccount.cpp" />
     <ClCompile Include="Command\BankClient.cpp" />
     <ClCompile Include="Command\BaseCommand.cpp" />
@@ -84,6 +87,9 @@
     <ClInclude Include="Builder\HttpStructures.h" />
     <ClInclude Include="Builder\IHttpPackageBuilder.h" />
     <ClInclude Include="Builder\HttpRequestPackageBuilder.h" />
+    <ClInclude Include="ChainOfResponsibility\BaseLogger.h" />
+    <ClInclude Include="ChainOfResponsibility\ConsoleLogger.h" />
+    <ClInclude Include="ChainOfResponsibility\FileLogger.h" />
     <ClInclude Include="Command\BankAccount.h" />
     <ClInclude Include="Command\BankClient.h" />
     <ClInclude Include="Command\BaseCommand.h" />

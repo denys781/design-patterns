@@ -93,6 +93,12 @@
     <Filter Include="Source Files\Observer">
       <UniqueIdentifier>{6707154d-b0e8-44b3-b683-54793210036e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ChainOfResponsibility">
+      <UniqueIdentifier>{c480f16e-d52a-478e-bff3-a5c509b3fcfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ChainOfResponsibility">
+      <UniqueIdentifier>{ff9b264c-8ade-4989-9df4-17d224dc86fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -220,6 +226,15 @@
     </ClCompile>
     <ClCompile Include="Observer\ConsoleListener.cpp">
       <Filter>Source Files\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainOfResponsibility\BaseLogger.cpp">
+      <Filter>Source Files\ChainOfResponsibility</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainOfResponsibility\ConsoleLogger.cpp">
+      <Filter>Source Files\ChainOfResponsibility</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainOfResponsibility\FileLogger.cpp">
+      <Filter>Source Files\ChainOfResponsibility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -378,6 +393,15 @@
     </ClInclude>
     <ClInclude Include="Observer\ConsoleListener.h">
       <Filter>Header Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainOfResponsibility\BaseLogger.h">
+      <Filter>Header Files\ChainOfResponsibility</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainOfResponsibility\ConsoleLogger.h">
+      <Filter>Header Files\ChainOfResponsibility</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainOfResponsibility\FileLogger.h">
+      <Filter>Header Files\ChainOfResponsibility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
