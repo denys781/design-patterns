@@ -99,6 +99,12 @@
     <Filter Include="Source Files\ChainOfResponsibility">
       <UniqueIdentifier>{ff9b264c-8ade-4989-9df4-17d224dc86fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Iterator">
+      <UniqueIdentifier>{d3c7108d-333c-458c-9139-4a301f7d1f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TemplateMethod">
+      <UniqueIdentifier>{5486fbef-694a-4eb4-95e9-aa61a430dd99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -235,6 +241,12 @@
     </ClCompile>
     <ClCompile Include="ChainOfResponsibility\FileLogger.cpp">
       <Filter>Source Files\ChainOfResponsibility</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterator\IteratorSource.cpp">
+      <Filter>Source Files\Iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateMethod\TemplateMethodSource.cpp">
+      <Filter>Source Files\TemplateMethod</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

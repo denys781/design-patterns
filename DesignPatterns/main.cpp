@@ -288,6 +288,11 @@ void ShowChainOfResponsibilityPattern()
     fileLoggerPtr->Log(LogLevel::Warn, "Some warning text to log.");
 }
 
+void ShowOtherPatterns()
+{
+    std::cout << "\n\>\>\> Other design patterns are without separate examples, only one .cpp file for each one \<\<\<";
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -305,6 +310,7 @@ int main(int, char**)
     ShowCommandPattern();
     ShowObserverPattern();
     ShowChainOfResponsibilityPattern();
+    ShowOtherPatterns();
 
     return std::cin.get();
 }

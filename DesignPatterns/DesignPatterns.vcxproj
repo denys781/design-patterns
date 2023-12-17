@@ -55,6 +55,7 @@
     <ClCompile Include="FactoryMethod\PostgreSQLDatabaseEngine.cpp" />
     <ClCompile Include="Flyweight\Character.cpp" />
     <ClCompile Include="Flyweight\CharacterFactory.cpp" />
+    <ClCompile Include="Iterator\IteratorSource.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Observer\ConsoleListener.cpp" />
     <ClCompile Include="Observer\Person.cpp" />
@@ -64,6 +65,7 @@
     <ClCompile Include="Proxy\Image.cpp" />
     <ClCompile Include="Proxy\ImageProxy.cpp" />
     <ClCompile Include="Singleton\Logger.cpp" />
+    <ClCompile Include="TemplateMethod\TemplateMethodSource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory\HeavilyArmedArcher.h" />
