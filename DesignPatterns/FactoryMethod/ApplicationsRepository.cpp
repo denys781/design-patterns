@@ -1,4 +1,5 @@
 #include "ApplicationsRepository.h"
+#include "stdexcept"
 
 namespace FactoryMethod
 {

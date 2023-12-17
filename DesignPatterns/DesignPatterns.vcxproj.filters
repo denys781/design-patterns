@@ -81,6 +81,18 @@
     <Filter Include="Source Files\Flyweight">
       <UniqueIdentifier>{aac04f9f-1477-4840-9d40-7425390cd9d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Command">
+      <UniqueIdentifier>{0d9ff7ee-4966-4382-a706-eb9ef346e2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command">
+      <UniqueIdentifier>{fc392665-18d5-4b68-aceb-e4de1e17d3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Observer">
+      <UniqueIdentifier>{0937d1f1-cfea-4d5a-920c-b0455c300d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Observer">
+      <UniqueIdentifier>{6707154d-b0e8-44b3-b683-54793210036e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -187,6 +199,27 @@
     </ClCompile>
     <ClCompile Include="Flyweight\CharacterFactory.cpp">
       <Filter>Source Files\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\BankAccount.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\PutCashCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\TakeCashCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\BaseCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\BankClient.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Person.cpp">
+      <Filter>Source Files\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\ConsoleListener.cpp">
+      <Filter>Source Files\Observer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -321,6 +354,30 @@
     </ClInclude>
     <ClInclude Include="Flyweight\CharacterFactory.h">
       <Filter>Header Files\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\BankAccount.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\PutCashCommand.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\TakeCashCommand.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\BaseCommand.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\BankClient.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\PersonObserver.h">
+      <Filter>Header Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Person.h">
+      <Filter>Header Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\ConsoleListener.h">
+      <Filter>Header Files\Observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,5 +1,6 @@
 #include "XorStreamWriterDecorator.h"
 #include <algorithm>
+#include "stdexcept"
 
 namespace Decorator
 {

@@ -13,6 +13,11 @@
 #include "Bridge\Time12H.h"
 #include "Bridge\Time24H.h"
 #include "Flyweight\CharacterFactory.h"
+#include "Command/BankClient.h"
+#include "Command/PutCashCommand.h"
+#include "Command/TakeCashCommand.h"
+#include "Observer/Person.h"
+#include "Observer/ConsoleListener.h"
 #include <iostream>
 
 void ShowSingletonPattern()
@@ -217,6 +222,55 @@ void ShowFlyweightPattern()
     std::cout << "NO CONSOLE OUTPUT FOR PATTERN\n";
 }
 
+void ShowCommandPattern()
+{
+    std::cout << "\n\>\>\> Command pattern \<\<\<\n";
+
+    using namespace Command;
+
+    auto bankAccountPtr = std::make_shared<BankAccount>();
+    auto putCashCommandPtr = std::make_unique<PutCashCommand>(bankAccountPtr);
+    auto takeCashCommandPtr = std::make_unique<TakeCashCommand>(bankAccountPtr);
+
+    BankClient client(std::move(putCashCommandPtr), std::move(takeCashCommandPtr));
+
+    if (client.PutCash(100))
+        std::cout << "Bank client successfully put 100 dollars into his/here bank account.\n";
+    if (client.TakeCash(125))
+        std::cout << "Bank client successfully toke 125 dollars from his/here bank account.\n";
+    if (client.TakeCash(75))
+        std::cout << "Bank client successfully toke 75 dollars from his/here bank account.\n";
+
+    try
+    {
+        std::shared_ptr<BankAccount> emptyBankAccoutPtr;
+        std::make_unique<PutCashCommand>(emptyBankAccoutPtr);
+    }
+    catch (const std::exception&)
+    {
+        std::cerr << "Attempt to create bank operation command without bank account.\n";
+    }
+}
+
+void ShowObserverPattern()
+{
+    std::cout << "\n\>\>\> Observer pattern \<\<\<\n";
+
+    using namespace Observer;
+
+    auto consoleListenerPtr = std::make_shared<ConsoleListener>();
+    auto personPtr = std::make_shared<Person>("Denys", "Khodakov");
+
+    personPtr->Subscribe(consoleListenerPtr);
+
+    std::cout << "Person is " << personPtr->GetFirstName() << ' ' << personPtr->GetLastName() << ".\n";
+
+    personPtr->SetFirstName("Winston");
+    personPtr->SetLastName("Churchill");
+
+    std::cout << "Person is " << personPtr->GetFirstName() << ' ' << personPtr->GetLastName() << ".\n";
+}
+
 int main(int, char**)
 {
     ShowSingletonPattern();
@@ -231,6 +285,8 @@ int main(int, char**)
     ShowFacadePattern();
     ShowBridgePattern();
     ShowFlyweightPattern();
+    ShowCommandPattern();
+    ShowObserverPattern();
 
     return std::cin.get();
 }
