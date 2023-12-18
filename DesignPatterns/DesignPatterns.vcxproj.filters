@@ -105,6 +105,9 @@
     <Filter Include="Source Files\TemplateMethod">
       <UniqueIdentifier>{5486fbef-694a-4eb4-95e9-aa61a430dd99}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Visitor">
+      <UniqueIdentifier>{ca1a2cb0-e028-4f2d-a3f4-a2dfa6a38e61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -247,6 +250,9 @@
     </ClCompile>
     <ClCompile Include="TemplateMethod\TemplateMethodSource.cpp">
       <Filter>Source Files\TemplateMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor\VisitorSouce.cpp">
+      <Filter>Source Files\Visitor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
