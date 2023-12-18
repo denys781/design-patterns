@@ -111,6 +111,9 @@
     <Filter Include="Source Files\State">
       <UniqueIdentifier>{f2d87662-e1d0-47e2-8082-66c888cbcf4e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Strategy">
+      <UniqueIdentifier>{5de8670c-921d-4333-a5ca-0df30102ff7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -259,6 +262,9 @@
     </ClCompile>
     <ClCompile Include="State\State.cpp">
       <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\StrategySource.cpp">
+      <Filter>Source Files\Strategy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
