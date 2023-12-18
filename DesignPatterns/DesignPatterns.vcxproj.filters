@@ -275,6 +275,9 @@
     <ClCompile Include="Mediator\MediatorSource.cpp">
       <Filter>Source Files\Mediator</Filter>
     </ClCompile>
+    <ClCompile Include="Memento\MementoSource.cpp">
+      <Filter>Source Files\Memento</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Logger.h">
