@@ -114,6 +114,12 @@
     <Filter Include="Source Files\Strategy">
       <UniqueIdentifier>{5de8670c-921d-4333-a5ca-0df30102ff7f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Mediator">
+      <UniqueIdentifier>{8aaf5317-ad27-44a4-b6b0-c5c35b90e056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memento">
+      <UniqueIdentifier>{825ac6f5-2229-40f6-8a6f-d9f55b257279}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -265,6 +271,9 @@
     </ClCompile>
     <ClCompile Include="Strategy\StrategySource.cpp">
       <Filter>Source Files\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator\MediatorSource.cpp">
+      <Filter>Source Files\Mediator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

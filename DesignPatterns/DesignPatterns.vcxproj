@@ -57,6 +57,7 @@
     <ClCompile Include="Flyweight\CharacterFactory.cpp" />
     <ClCompile Include="Iterator\IteratorSource.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mediator\MediatorSource.cpp" />
     <ClCompile Include="Observer\ConsoleListener.cpp" />
     <ClCompile Include="Observer\Person.cpp" />
     <ClCompile Include="Prototype\Archer.cpp" />
