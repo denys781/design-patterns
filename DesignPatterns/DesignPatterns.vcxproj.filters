@@ -108,6 +108,9 @@
     <Filter Include="Source Files\Visitor">
       <UniqueIdentifier>{ca1a2cb0-e028-4f2d-a3f4-a2dfa6a38e61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\State">
+      <UniqueIdentifier>{f2d87662-e1d0-47e2-8082-66c888cbcf4e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -253,6 +256,9 @@
     </ClCompile>
     <ClCompile Include="Visitor\VisitorSouce.cpp">
       <Filter>Source Files\Visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="State\State.cpp">
+      <Filter>Source Files\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

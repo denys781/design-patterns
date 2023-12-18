@@ -65,6 +65,7 @@
     <ClCompile Include="Proxy\Image.cpp" />
     <ClCompile Include="Proxy\ImageProxy.cpp" />
     <ClCompile Include="Singleton\Logger.cpp" />
+    <ClCompile Include="State\State.cpp" />
     <ClCompile Include="TemplateMethod\TemplateMethodSource.cpp" />
     <ClCompile Include="Visitor\VisitorSouce.cpp" />
   </ItemGroup>
